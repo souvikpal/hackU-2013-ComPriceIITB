@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Search and Compare Prices</display-name>
+  <servlet>
+    <servlet-name>AboutUs</servlet-name>
+    <servlet-class>AboutUs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AboutUs</servlet-name>
+    <url-pattern>/AboutUs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContactUs</servlet-name>
+    <servlet-class>ContactUs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUs</servlet-name>
+    <url-pattern>/ContactUs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchResults</servlet-name>
+    <servlet-class>SearchResults</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchResults</servlet-name>
+    <url-pattern>/SearchResults</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>20</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>Search.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
